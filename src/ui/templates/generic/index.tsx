@@ -19,11 +19,7 @@ const theme = createTheme({
 
 export const GenericLayout = ({ children }: GenereicProps) => (
   <ThemeProvider theme={theme}>
-    <Header />
-    <Main>
-      <Container>{children}</Container>
-    </Main>
-    <Footer />
+    <Main>{children}</Main>
   </ThemeProvider>
 )
 
